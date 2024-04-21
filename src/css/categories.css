@@ -1,0 +1,90 @@
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+.container-card {
+    margin: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.container-card img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.card-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(20px);
+    background-color: rgba(82, 108, 147, 0.7);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+a .card-info a {
+    color: #ffffff;
+}
+
+.card-info a:hover {
+    color: #d35e4e;
+}
+
+.pagination-blog ul {
+    flex-wrap: wrap;
+    margin: 3rem 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-blog ul li {
+    margin: 1rem;
+}
+
+.pagination-blog li a {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(82, 108, 147);
+    color: rgb(82, 108, 147);
+    padding: 0.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+.pagination-blog li a:hover,
+li a.current-pagination-page {
+    background-color: rgb(211, 94, 78);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+
+@media screen and (min-width: 480px) {
+    .container-flex {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-end;
+        align-items: stretch;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-card {
+        flex: 0 0 20%;
+        padding: .5rem;
+    }
+}

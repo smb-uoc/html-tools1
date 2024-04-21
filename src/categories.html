@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>RHCP Fans | Categorías</title>
+    <include src="./src/html/common/head.html"></include>
+</head>
+<body>
+<include src="./src/html/common/header.html"></include>
+<main class="blog">
+    <h1>Categorías destacadas por tema</h1>
+    <div class="container-flex">
+        <div class="container-card" data-tilt data-tilt-scale="1.1">
+            <a href="./discs.html">
+                <img alt="Algunas carátulas de los discos de nuestra banda favorita" src="./img/discs.jpg">
+            </a>
+            <div class="card-info">
+                <a href="./discs.html">
+                    <h2>Discografía</h2>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-card" data-tilt data-tilt-scale="1.1">
+            <a href="./topsongs.html">
+                <img alt="¡Las mejores canciones de los Red Hot Chili Peppers!" src="./img/top_songs.jpg">
+            </a>
+            <div class="card-info">
+                <h2><a href="./topsongs.html">Top 10 canciones</a></h2>
+            </div>
+        </div>
+        <div class="container-card" data-tilt data-tilt-scale="1.1">
+            <a href="./fancomments.html">
+                <img alt="¡Comparte tus pensamientos y opiniones sobre los Red Hot Chili Peppers!"
+                     src="./img/comment.jpg">
+            </a>
+            <div class="card-info">
+                <h2><a href="./fancomments.html">Mensajes de los fans</a></h2>
+            </div>
+        </div>
+
+        <div class="container-card" data-tilt data-tilt-scale="1.1">
+            <a href="#">
+                <img alt="¡Descubre nuestro alucinante merchandising de los Red Hot Chili Peppers!"
+                     src="./img/merchandise.jpg">
+            </a>
+            <div class="card-info">
+                <h2><a href="#">Nuestra tienda</a></h2>
+            </div>
+        </div>
+    </div>
+    <div class="pagination-blog">
+        <ul>
+            <li><a class="current-pagination-page" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">...</a></li>
+        </ul>
+    </div>
+</main>
+<include src="./src/html/common/footer.html"></include>
+<script src="../node_modules/vanilla-tilt/dist/vanilla-tilt.js" type="text/javascript"></script>
+</body>
+</html>

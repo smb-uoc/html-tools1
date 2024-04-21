@@ -1,0 +1,145 @@
+h1 {
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #D35E4EFF;
+}
+
+.portada {
+    background-image: url("../img/img1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 3rem;
+    height: 100%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.card p {
+    padding-bottom: 2rem;
+    text-align: justify;
+}
+
+.portada iframe {
+    border-radius: 12px;
+    padding: 0.85rem;
+    width: 100%;
+    height: 200px;
+    flex: 0.6;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.merchandising {
+    background-image: linear-gradient(to right, #d35e4e, #9a9a79, #526c93);
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    align-content: center;
+}
+
+.content img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.merchandising a {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.merchandising h2 {
+    text-align: center;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.newsletter-form {
+    background-color: #ffffff;
+    padding: 3rem;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 0.65rem 0.5rem;
+    border: 1px solid rgb(229, 225, 254);
+    border-radius: 3px;
+    margin: 0.4rem 0;
+    box-sizing: border-box;
+}
+
+.newsletter-form input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+.newsletter-form input:focus-visible {
+    border: 1px solid rgb(211, 94, 78);
+    outline-style: none;
+}
+
+.newsletter-form label {
+    margin-bottom: 1rem;
+}
+
+.button {
+    background-color: rgb(82, 108, 147);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.65rem;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: rgb(211, 94, 78);
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 780px) {
+    .portada {
+        flex-wrap: nowrap;
+        background-position: center -180px;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.5);
+        flex: 0.4;
+        padding: 4rem;
+    }
+
+    .merchandising {
+        background-image: linear-gradient(to right, #9a9a79, #526c93);
+        flex: 0.5;
+    }
+
+    .newsletter-form {
+        flex: 0.5;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+}
