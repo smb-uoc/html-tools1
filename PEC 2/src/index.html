@@ -25,13 +25,15 @@
         <p>¡Prepárate para vibrar al ritmo de la música de los Red Hot Chili Peppers!</p>
 
     </div>
+</main>
+<div class="content-spotify">
     <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             allowfullscreen=""
             class="playlist"
             loading="lazy"
             src="https://open.spotify.com/embed/playlist/4WVyrNVw8rcT33fiYVCCYc?utm_source=generator">
     </iframe>
-</main>
+</div>
 <div class="content">
     <div class="newsletter-form">
         <p>Para estar al día, <strong>suscríbete a nuestra <i>newsletter</i></strong>.</p>
@@ -55,11 +57,45 @@
             <button class="button" type="submit">Suscríbeme a la newsletter</button>
         </form>
     </div>
-    <div class="merchandising">
-        <h2>Entra aquí para ver nuestro merchandising</h2>
-        <a href="#">
-            <img alt="merchandise logo" data-tilt data-tilt-scale="1.1" src="./img/merchandise.jpg">
+</div>
+<div class="container-flex">
+    <div class="container-card" data-tilt data-tilt-scale="1.1">
+        <a href="./discs.html">
+            <img alt="Algunas carátulas de los discos de nuestra banda favorita" src="./img/discs.jpg">
         </a>
+        <div class="card-info">
+            <a href="./discs.html">
+                <h2>Discografía</h2>
+            </a>
+        </div>
+    </div>
+
+    <div class="container-card" data-tilt data-tilt-scale="1.1">
+        <a href="./topsongs.html">
+            <img alt="¡Las mejores canciones de los Red Hot Chili Peppers!" src="./img/top_songs.jpg">
+        </a>
+        <div class="card-info">
+            <h2><a href="./topsongs.html">Top 10 canciones</a></h2>
+        </div>
+    </div>
+    <div class="container-card" data-tilt data-tilt-scale="1.1">
+        <a href="./fancomments.html">
+            <img alt="¡Comparte tus pensamientos y opiniones sobre los Red Hot Chili Peppers!"
+                 src="./img/comment.jpg">
+        </a>
+        <div class="card-info">
+            <h2><a href="./fancomments.html">Mensajes de los fans</a></h2>
+        </div>
+    </div>
+
+    <div class="container-card" data-tilt data-tilt-scale="1.1">
+        <a href="#">
+            <img alt="¡Descubre nuestro alucinante merchandising de los Red Hot Chili Peppers!"
+                 src="./img/merchandise.jpg">
+        </a>
+        <div class="card-info">
+            <h2><a href="#">Nuestra tienda</a></h2>
+        </div>
     </div>
 </div>
 <include src="./src/html/common/footer.html"></include>

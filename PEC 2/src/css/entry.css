@@ -98,7 +98,7 @@ blockquote {
     justify-content: flex-start;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
     .entry-card {
         box-sizing: border-box;
         background-color: #fff;

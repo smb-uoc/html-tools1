@@ -73,7 +73,7 @@ li a.current-pagination-page {
 }
 
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
     .container-flex {
         display: flex;
         flex-direction: row;
