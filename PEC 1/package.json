@@ -8,12 +8,12 @@
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build validate",
     "parcel:dev": "parcel",
-    "parcel:build": "parcel build --public-url ./",
+    "parcel:build": "parcel build --dist-dir docs --public-url ./",
     "clean": "rimraf dist .parcel-cache",
     "validate": "npm-run-all validate-css validate-html",
     "validate-css": "css-validator",
-    "validate-html": "html-validator ./dist",
-    "publish": "gh-pages -d ./dist -b main --repo https://github.com/smb-uoc/smb-uoc.github.io.git --dest rhcpfans --silent false"
+    "validate-html": "html-validator ./docs",
+    "publish": "gh-pages -d ./docs -b main --dest docs --silent false"
   },
   "keywords": [],
   "author": "silvia <smartinezbae@uoc.edu>",
