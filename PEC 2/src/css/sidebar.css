@@ -1,10 +1,9 @@
 .sidebar-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-content: stretch;
+    flex-flow: wrap;
+    place-content: stretch flex-start;
     align-items: stretch;
+    display: flex;
+    justify-content: center;
 }
 
 .sidebar-flex > h2 {

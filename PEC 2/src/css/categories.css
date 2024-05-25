@@ -30,15 +30,23 @@
     color: #000c;
     margin: 2rem;
     padding: 1rem;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text p {
+    self-align: end;
 }
 
 .card-text {
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: normal;
+    flex: 1;
 }
 
-.card-text h2{
+.card-text h2 {
     margin-bottom: 1rem;
 }
 
@@ -62,16 +70,19 @@ a .card-info a {
 }
 
 .pagination-blog ul {
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    place-content: center;
+    align-items: center;
     margin: 3rem 0;
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: center;
+    align-content: center;
+    flex-direction: row;
 }
 
 .pagination-blog ul li {
-    margin: 1rem;
+    padding: 1rem 0;
 }
 
 .pagination-blog li a {
@@ -90,7 +101,6 @@ li a.current-pagination-page {
     color: rgb(255, 255, 255);
     border: none;
 }
-
 
 @media screen and (min-width: 481px) {
     .container-flex {
