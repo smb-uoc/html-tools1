@@ -16,11 +16,30 @@
     transform: perspective(1000px);
 }
 
-.container-card img {
+.container-card img,
+.category-card img {
     width: 100%;
     max-width: 100%;
     border-radius: 8px;
     display: block;
+}
+
+.category-card {
+    text-align: center;
+    background-color: #fff;
+    color: #000c;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.card-text {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.card-text h2{
+    margin-bottom: 1rem;
 }
 
 .card-info {
@@ -86,5 +105,12 @@ li a.current-pagination-page {
     .container-card {
         flex: 0 0 20%;
         padding: .5rem;
+    }
+
+    .category-card {
+        text-align: center;
+        background-color: #fff;
+        color: #000c;
+        flex: 0.2;
     }
 }
