@@ -12,7 +12,7 @@
     "clean": "rimraf dist .parcel-cache",
     "validate": "npm-run-all validate-css validate-html",
     "validate-css": "css-validator",
-    "validate-html": "html-validator ./docs",
+    "validate-html": "html-validator ./dist",
     "publish": "gh-pages -d ./docs -b main --dest docs --silent false"
   },
   "keywords": [],
