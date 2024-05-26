@@ -9,10 +9,11 @@
     "build": "npm-run-all clean parcel:build validate",
     "parcel:dev": "parcel",
     "parcel:build": "parcel build --dist-dir docs --public-url ./",
-    "clean": "rimraf dist .parcel-cache",
-    "validate": "npm-run-all validate-css validate-html",
+    "clean": "rimraf dist docs .parcel-cache",
+    "validate": "npm-run-all validate-css validate-html validate-accessibility",
     "validate-css": "css-validator",
     "validate-html": "html-validator ./docs",
+    "validate-accessibility": "axe --tags wcag2a http://localhost:1234/disc1.html http://localhost:1234/discography.html http://localhost:1234/fancomments.html http://localhost:1234/history.html http://localhost:1234/index.html http://localhost:1234/learnthelyrics.html http://localhost:1234/references.html http://localhost:1234/sitemap.html http://localhost:1234/song1.html http://localhost:1234/song2.html http://localhost:1234/song3.html http://localhost:1234/topsongs.html",
     "publish": "gh-pages -d ./docs -b main --dest docs --silent false"
   },
   "keywords": [],
@@ -29,6 +30,7 @@
     "w3c-html-validator": "^1.7.0"
   },
   "dependencies": {
-    "vanilla-tilt": "^1.8.1"
+    "vanilla-tilt": "^1.8.1",
+    "@axe-core/cli": "4.9.1"
   }
 }

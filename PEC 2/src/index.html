@@ -26,11 +26,13 @@
     </div>
 </main>
 <div class="content-spotify">
-    <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    <iframe name="spotify"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             allowfullscreen=""
             class="playlist"
             loading="lazy"
-            src="https://open.spotify.com/embed/playlist/4WVyrNVw8rcT33fiYVCCYc?utm_source=generator">
+            src="https://open.spotify.com/embed/playlist/4WVyrNVw8rcT33fiYVCCYc?utm_source=generator"
+            title="Reproductor de Spotify - Playlist de ejemplo">
     </iframe>
 </div>
 <div class="clip-container">
@@ -38,7 +40,7 @@
 </div>
 <div class="content">
     <div class="newsletter-form">
-        <p>Para estar al día, <strong>suscríbete a nuestra <i>newsletter</i></strong>.</p>
+        <p>Para estar al día, <strong>suscríbete a nuestra <em>newsletter</em></strong>.</p>
         <form action="/newsletter-subscribe" id="newsletter-subscribe" method="post" name="newsletter-subscribe">
             <label for="name">Nombre</label>
             <input id="name" name="name" placeholder="Introduce tu nombre" type="text">

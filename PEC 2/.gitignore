@@ -1,7 +1,8 @@
 node_modules
-.dist
 .cache
 .parcel-cache
 .idea
 .DS_Store
-package-lock.json
+**/package-lock.json
+**/dist/
+**/docs/
