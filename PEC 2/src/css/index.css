@@ -1,0 +1,193 @@
+h1 {
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #D35E4EFF;
+}
+
+.portada {
+    background-color: #191717;
+    background-image: url("../img/img1.webp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    height: 100%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: whitesmoke;
+}
+
+.card p {
+    padding-bottom: 2rem;
+    text-align: justify;
+}
+
+iframe {
+    padding: 0.85rem;
+    width: 100%;
+    height: 200px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.merchandising {
+    background-image: linear-gradient(to right, #d35e4e, #9a9a79, #526c93);
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    align-content: center;
+}
+
+.content img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.merchandising a {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.merchandising h2 {
+    text-align: center;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.newsletter-form {
+    background-color: #ffffff;
+    padding: 3rem;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 0.65rem 0.5rem;
+    border: 1px solid rgb(229, 225, 254);
+    border-radius: 3px;
+    margin: 0.4rem 0;
+    box-sizing: border-box;
+}
+
+.newsletter-form input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+.newsletter-form input:focus-visible {
+    border: 1px solid rgb(211, 94, 78);
+    outline-style: none;
+}
+
+.newsletter-form label {
+    margin-bottom: 1rem;
+}
+
+.button {
+    background-color: rgb(82, 108, 147);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.65rem;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: rgb(211, 94, 78);
+    cursor: pointer;
+}
+
+.typing-animation {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end 3;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+.clip-container {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.clip-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    transition: clip-path 1s ease-in-out;
+}
+
+.clip-image:hover {
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+}
+
+@media screen and (min-width: 481px) {
+    .portada {
+        flex-wrap: nowrap;
+        background-position: center -180px;
+        background-size: auto;
+    }
+
+    .card {
+        flex: 0.4;
+    }
+
+    .merchandising {
+        background-image: linear-gradient(to right, #9a9a79, #526c93);
+        flex: 0.5;
+    }
+
+    .newsletter-form {
+        flex: 0.5;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .portada {
+        background-color: #191717;
+        background-image: url("../img/img1-big.webp");
+        background-size: cover;
+        background-position: center 0;
+        background-repeat: no-repeat;
+    }
+}

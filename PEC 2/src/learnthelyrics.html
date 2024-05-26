@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>RHCP Fans | Aprende la letra</title>
+    <include src="./src/html/common/head.html"></include>
+    <script src="./js/learnthelyrics.js" type="module"></script>
+</head>
+<body>
+<include src="./src/html/common/header.html"></include>
+<main class="blog blog-entry">
+    <div class="section-header">
+        <img alt="RHCP logo" src="./img/logo-2.svg">
+    </div>
+    <h1>Aprende la letra</h1>
+    <p class="breadcrumb">
+        <a href="./index.html">Inicio</a> > <a class="current-breadcrumb" href="./learnthelyrics.html">Letras</a>
+    </p>
+    <div class="flex-container">
+        <div class="entry-card">
+            <div class="container100">
+                <iframe name="spotify"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        allowfullscreen=""
+                        class="playlist"
+                        loading="lazy"
+                        src="https://open.spotify.com/embed/playlist/4WVyrNVw8rcT33fiYVCCYc?utm_source=generator">
+                </iframe>
+            </div>
+            <label for="songtitle" style="padding-top: 2rem; padding-bottom: 0; margin-bottom: 0">Selecciona una canción</label>
+            <div class="flex-container container100" style="padding-top: 0">
+                <input id="songtitle" placeholder="Ingresa una canción de RHCP" type="text" value="Californication">
+                <button onclick="searchLyrics()">Buscar</button>
+                <button class="reset" onclick="clean()">Reset</button>
+            </div>
+            <div class="letra" id="letra"></div>
+        </div>
+    </div>
+</main>
+<include src="./src/html/common/footer.html"></include>
+</body>
+</html>
