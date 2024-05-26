@@ -129,3 +129,22 @@ blockquote {
         padding: 1rem;
     }
 }
+
+@keyframes bell-ring {
+    0% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+.bell-icon:hover {
+    font-size: 24px;
+    color: #333;
+    animation: bell-ring 1s infinite;
+    transform-origin: top center;
+}
