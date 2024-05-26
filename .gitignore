@@ -4,3 +4,5 @@
 .parcel-cache
 .idea
 .DS_Store
+**/PEC*
+**/PEC */
