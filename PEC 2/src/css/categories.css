@@ -111,6 +111,7 @@ li a.current-pagination-page {
 
 .section-header img {
     width: 50%;
+    min-width: 92px;
 }
 
 @media screen and (min-width: 481px) {
@@ -138,12 +139,17 @@ li a.current-pagination-page {
 
     .section-header img {
         width: 25%;
+        max-width: 156px;
     }
 }
 
-@media screen and (min-width: 780px) {
-    .section-header img {
-        width: 15%;
-        max-width: 256px;
-    }
+.zoom-on-hover {
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.5s ease;
 }
+
+.zoom-on-hover:hover {
+    transform: scale(1.1);
+}
+

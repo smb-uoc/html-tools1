@@ -115,6 +115,23 @@ iframe {
     cursor: pointer;
 }
 
+.typing-animation {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end 3;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
 
 @media screen and (min-width: 481px) {
     .portada {
@@ -141,13 +158,14 @@ iframe {
         text-align: left;
     }
 
-    @media screen and (min-width: 1024px) {
-        .portada {
-            background-color: #191717;
-            background-image: url("../img/img1-big.webp");
-            background-size: cover;
-            background-position: center 0;
-            background-repeat: no-repeat;
-        }
+}
+
+@media screen and (min-width: 1024px) {
+    .portada {
+        background-color: #191717;
+        background-image: url("../img/img1-big.webp");
+        background-size: cover;
+        background-position: center 0;
+        background-repeat: no-repeat;
     }
 }

@@ -1,11 +1,14 @@
 import data from './comments.json';
 
-export function addComments(data) {
+export function addComments(data, hasEffect) {
     const comentariosDiv = document.getElementById("comentarios");
 
     data.forEach(comentario => {
         const comentarioDiv = document.createElement("div");
         comentarioDiv.classList.add("comentario");
+        if(hasEffect) {
+            comentarioDiv.classList.add("typing-animation");
+        }
 
         const nombreParrafo = document.createElement("p");
         nombreParrafo.classList.add("nombre");
@@ -32,10 +35,10 @@ window.enviarComentario = function enviarComentario() {
         nombre: document.getElementById("nombre").value,
         comentario: document.getElementById("comentario").value,
         datetime: new Date()
-    }])
+    }], true)
 
     document.getElementById("nombre").value = "";
     document.getElementById("comentario").value = "";
 }
 
-addComments(data);
+addComments(data, false);
