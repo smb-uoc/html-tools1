@@ -1,12 +1,12 @@
 h1 {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     font-size: 2.5rem;
     color: #D35E4EFF;
 }
 
 .portada {
     background-color: #191717;
-    background-image: url("../img/img1.jpg");
+    background-image: url("../img/img1.webp");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -141,4 +141,13 @@ iframe {
         text-align: left;
     }
 
+    @media screen and (min-width: 1024px) {
+        .portada {
+            background-color: #191717;
+            background-image: url("../img/img1-big.webp");
+            background-size: cover;
+            background-position: center 0;
+            background-repeat: no-repeat;
+        }
+    }
 }

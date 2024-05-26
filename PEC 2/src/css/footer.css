@@ -108,6 +108,7 @@ footer ul {
     .footer-left {
         justify-content: left;
         align-items: flex-start;
+        flex: 0.5;
     }
 
     .multiple-links {
@@ -126,5 +127,9 @@ footer ul {
 
     .footer-left a {
         display: flex;
+    }
+
+    .footer-left img {
+        max-width: 125px;
     }
 }

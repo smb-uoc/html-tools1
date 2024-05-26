@@ -4,7 +4,7 @@
 
 p.breadcrumb {
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 a.current-breadcrumb {
@@ -34,7 +34,7 @@ a.current-breadcrumb {
     align-items: center;
 }
 
-.photo-container img {
+.photo-container picture img {
     width: 100%;
     max-width: fit-content;
 }
@@ -59,17 +59,21 @@ a.current-breadcrumb {
     padding: 1rem 0;
 }
 
-.container ul li {
-    list-style-image: url("../img/chili-pepper.png");
+.container li {
+    background-image: url(../img/chili-pepper.svg);
+    background-position: 0 0.5rem;
+    background-repeat: no-repeat;
+    background-size: 2em;
+    padding-left: 2.5em;
+    list-style: none;
 }
 
-.container li {
-    margin-left: 1.5rem;
+li {
+    line-height: 2rem;
 }
 
 .container p,
-.container h2,
-.container li {
+.container h2 {
     padding: 0.5rem 0;
 }
 
@@ -119,10 +123,6 @@ blockquote {
         box-sizing: border-box;
         background-color: #fff;
         flex: 0.7;
-    }
-
-    .about-container,
-    .photo-container {
-        /*flex: 0.5;*/
+        padding: 1rem;
     }
 }

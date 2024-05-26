@@ -7,6 +7,9 @@
 <body>
 <include src="./src/html/common/header.html"></include>
 <main class="blog blog-entry">
+    <div class="section-header">
+        <img alt="RHCP logo" src="./img/logo-2.svg">
+    </div>
     <h1>Sitemap</h1>
     <p class="breadcrumb">
         <a href="./index.html">Inicio</a> > <a class="current-breadcrumb" href="./sitemap.html">Sitemap</a>
@@ -27,7 +30,11 @@
                     <p><strong>¡Explora nuestro sitio y únete a nuestra comunidad de fans apasionados!</strong></p>
                 </div>
                 <div class="photo-container">
-                    <img alt="multiple fans in a concert" src="./img/fans.jpg">
+                    <picture>
+                        <source srcset="./img/fans-small.webp" media="(max-width: 512px)">
+                        <source srcset="./img/fans.webp" media="(min-width: 1024px)">
+                        <img alt="multiple fans in a concert" src="./img/fans.webp">
+                    </picture>
                 </div>
 
                 <div class="container">

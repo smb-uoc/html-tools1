@@ -7,13 +7,16 @@
 <body>
 <include src="./src/html/common/header.html"></include>
 <main class="blog blog-entry">
+    <div class="section-header">
+        <img alt="RHCP logo" src="./img/logo-2.svg">
+    </div>
     <h1>Referencias</h1>
     <p class="breadcrumb">
         <a href="./index.html">Inicio</a> > <a class="current-breadcrumb" href="./references.html">Referencias</a>
     </p>
     <div class="flex-container">
         <article class="entry-card">
-            <div class="flex-container">
+            <div style="padding: 0 1rem;">
                 <div class="container about-container">
                     <p>En esta sección, encontrarás enlaces y referencias a las fuentes de información utilizadas en
                         nuestro sitio web sobre Red Hot Chili Peppers.</p>
@@ -21,9 +24,6 @@
                         generativa y tecnologías utilizadas en el desarrollo del sitio web.</p>
                     <p><strong>Gracias por tu interés en Red Hot Chili Peppers y por visitar nuestro sitio web.</strong>
                     </p>
-                </div>
-                <div class="photo-container">
-                    <img alt="rhcp concert" src="./img/img2.jpg">
                 </div>
 
                 <div class="container">
@@ -117,6 +117,13 @@
                     <p><strong>Gracias por tu interés en Red Hot Chili Peppers y por visitar nuestro sitio web.</strong>
                     </p>
 
+                </div>
+                <div class="photo-container">
+                    <img alt="rhcp concert"
+                         src="./img/img2-small.webp"
+                         srcset="./img/img2-small.webp 512w, ./img/img2-medium.webp 1024w, ./img/img2-big.webp 4096w"
+                         sizes="(max-width: 512px) 80vw, (max-width: 1024px) 80vw, 100vw"
+                    >
                 </div>
             </div>
         </article>

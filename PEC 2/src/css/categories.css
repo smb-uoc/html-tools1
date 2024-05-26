@@ -28,15 +28,15 @@
     text-align: center;
     background-color: #fff;
     color: #000c;
-    margin: 2rem;
-    padding: 1rem;
+    /*margin: 0 2rem 2rem;*/
+    /*padding: 1rem;*/
     height: inherit;
     display: flex;
     flex-direction: column;
 }
 
 .card-text p {
-    self-align: end;
+    align-self: end;
 }
 
 .card-text {
@@ -48,6 +48,7 @@
 
 .card-text h2 {
     margin-bottom: 1rem;
+    word-break: break-word;
 }
 
 .card-info {
@@ -102,6 +103,16 @@ li a.current-pagination-page {
     border: none;
 }
 
+.section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-header img {
+    width: 50%;
+}
+
 @media screen and (min-width: 481px) {
     .container-flex {
         display: flex;
@@ -122,5 +133,17 @@ li a.current-pagination-page {
         background-color: #fff;
         color: #000c;
         flex: 0.2;
+        min-width: 160px;
+    }
+
+    .section-header img {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .section-header img {
+        width: 15%;
+        max-width: 256px;
     }
 }
