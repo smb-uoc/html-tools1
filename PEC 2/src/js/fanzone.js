@@ -31,14 +31,24 @@ export function addComments(data, hasEffect) {
 }
 
 window.enviarComentario = function enviarComentario() {
-    addComments([{
-        nombre: document.getElementById("nombre").value,
-        comentario: document.getElementById("comentario").value,
-        datetime: new Date()
-    }], true)
+    const loadingContainer = document.getElementById('loading-container');
+    loadingContainer.classList.remove('loading-hidden');
+    loadingContainer.classList.add('loading-visible');
 
-    document.getElementById("nombre").value = "";
-    document.getElementById("comentario").value = "";
+    // Simulate a loading process
+    setTimeout(function() {
+        loadingContainer.classList.remove('loading-visible');
+        loadingContainer.classList.add('loading-hidden');
+
+        addComments([{
+            nombre: document.getElementById("nombre").value,
+            comentario: document.getElementById("comentario").value,
+            datetime: new Date()
+        }], true)
+
+        document.getElementById("nombre").value = "";
+        document.getElementById("comentario").value = "";
+    }, 3000);
 }
 
 addComments(data, false);

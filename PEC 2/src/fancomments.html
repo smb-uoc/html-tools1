@@ -26,6 +26,12 @@
                 <textarea id="comentario" name="comentario" required rows="4"></textarea>
                 <div class="button-container"><button class="glow-on-hover" onclick="enviarComentario()">Enviar</button></div>
             </div>
+            <div id="loading-container" class="loading-hidden">
+                <svg class="loading-spinner" viewBox="0 0 50 50">
+                    <circle class="loading-path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                    <text x="25" y="30" text-anchor="middle" font-size="10" fill="#111">Loading</text>
+                </svg>
+            </div>
             <h2>Comentarios:</h2>
             <ul id="comentarios"></ul>
         </article>

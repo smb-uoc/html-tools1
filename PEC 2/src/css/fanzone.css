@@ -110,3 +110,46 @@ button {
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
+#loading-container {
+    margin-top: 20px;
+}
+
+.loading-spinner {
+    width: 200px;
+    height: 200px;
+}
+
+.loading-path {
+    stroke: #111;
+    stroke-linecap: round;
+    animation: color-change 2s linear infinite;
+}
+
+@keyframes color-change {
+    0% {
+        stroke: #111;
+    }
+    25% {
+        stroke: #ff0000;
+    }
+    50% {
+        stroke: #00ff00;
+    }
+    75% {
+        stroke: #0000ff;
+    }
+    100% {
+        stroke: #111;
+    }
+}
+
+.loading-hidden {
+    display: none;
+}
+
+.loading-visible {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
