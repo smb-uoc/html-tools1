@@ -30,7 +30,10 @@
     "w3c-html-validator": "^1.7.0"
   },
   "dependencies": {
-    "vanilla-tilt": "^1.8.1",
-    "@axe-core/cli": "4.9.1"
+    "@axe-core/cli": "4.9.1",
+    "@parcel/compressor-brotli": "^2.12.0",
+    "@parcel/compressor-gzip": "^2.12.0",
+    "lighthouse": "^12.1.0",
+    "vanilla-tilt": "^1.8.1"
   }
 }
