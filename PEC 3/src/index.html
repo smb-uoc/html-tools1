@@ -30,13 +30,12 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             allowfullscreen=""
             class="playlist"
-            loading="lazy"
-            src="https://open.spotify.com/embed/playlist/4WVyrNVw8rcT33fiYVCCYc?utm_source=generator"
+            src="https://open.spotify.com/embed/playlist/4WVyrNVw8rcT33fiYVCCYc"
             title="Reproductor de Spotify - Playlist de ejemplo">
     </iframe>
 </div>
 <div class="clip-container">
-    <img src="./img/fans.webp" alt="Creative Clip" class="clip-image">
+    <img src="./img/fans.webp" loading="lazy" alt="Creative Clip" class="clip-image">
 </div>
 <div class="content">
     <div class="newsletter-form">
@@ -93,6 +92,8 @@
             <img alt="¡Comparte tus pensamientos y opiniones sobre los Red Hot Chili Peppers!"
                  src="./img/comment.webp"
                  loading="lazy"
+                 width="1024"
+                 height="1024"
             >
         </a>
         <div class="card-info">
@@ -113,6 +114,11 @@
     </div>
 </div>
 <include src="./src/html/common/footer.html"></include>
-<script src="../node_modules/vanilla-tilt/dist/vanilla-tilt.js" type="text/javascript"></script>
+<script src="../node_modules/vanilla-tilt/dist/vanilla-tilt.js" defer type="text/javascript"></script>
+<script async>
+    window.addEventListener('beforeunload', function(event) {
+        // Lógica para limpiar o guardar información antes de que el usuario abandone la página
+    });
+</script>
 </body>
 </html>

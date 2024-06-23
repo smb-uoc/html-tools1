@@ -29,6 +29,7 @@ footer a:hover {
 
 .footer-left img {
     max-width: 45%;
+    height: auto;
 }
 
 .footer-social {
@@ -131,5 +132,6 @@ footer ul {
 
     .footer-left img {
         max-width: 125px;
+        height: auto;
     }
 }
