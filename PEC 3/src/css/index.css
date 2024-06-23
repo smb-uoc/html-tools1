@@ -86,6 +86,8 @@ iframe {
 
 .newsletter-form input[type="checkbox"] {
     vertical-align: middle;
+    display: block;
+    width: 100%;
 }
 
 .newsletter-form input:focus-visible {
