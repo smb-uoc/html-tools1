@@ -19,6 +19,7 @@
 .container-card img,
 .category-card img {
     width: 100%;
+    height: auto;
     max-width: 100%;
     border-radius: 8px;
     display: block;
@@ -111,6 +112,7 @@ li a.current-pagination-page {
 
 .section-header img {
     width: 50%;
+    height: auto;
     min-width: 92px;
 }
 
@@ -139,6 +141,7 @@ li a.current-pagination-page {
 
     .section-header img {
         width: 25%;
+        height: auto;
         max-width: 156px;
     }
 }
