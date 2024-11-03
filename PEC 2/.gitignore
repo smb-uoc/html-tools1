@@ -3,6 +3,6 @@ node_modules
 .parcel-cache
 .idea
 .DS_Store
-**/package-lock.json
 **/dist/
 **/docs/
+**.idea
