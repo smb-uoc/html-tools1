@@ -1,0 +1,150 @@
+.blog-entry h1 {
+    padding-bottom: 0.5rem;
+}
+
+p.breadcrumb {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+a.current-breadcrumb {
+    font-weight: bolder;
+    color: #000000;
+}
+
+.flex-container {
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    padding: 0 1rem;
+}
+
+.entry-card {
+    box-sizing: border-box;
+    background-color: #fff;
+    /*padding: 2rem;*/
+}
+
+.photo-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photo-container picture img {
+    width: 100%;
+    max-width: fit-content;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporción de aspecto 16:9 (9/16 * 100) */
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.container li {
+    background-image: url(../img/chili-pepper.svg);
+    background-position: 0 0.5rem;
+    background-repeat: no-repeat;
+    background-size: 2em;
+    padding-left: 2.5em;
+    list-style: none;
+}
+
+li {
+    line-height: 2rem;
+}
+
+h2,
+.container p,
+.container h2 {
+    padding: 0.5rem 0;
+}
+
+h2,
+h3,
+.container h2,
+.container h3 {
+    color: rgb(211, 94, 78);
+}
+
+blockquote {
+    border-left: 3px solid rgb(211, 94, 78);
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.col-container {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+.row-container h2 {
+    padding-bottom: 0.5rem;
+}
+
+.row-container {
+    flex-flow: wrap;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.inner-container {
+    flex-flow: wrap;
+    place-content: center space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.youtube {
+    height: 380px;
+}
+
+@media screen and (min-width: 481px) {
+    .entry-card {
+        box-sizing: border-box;
+        background-color: #fff;
+        flex: 0.7;
+        padding: 1rem;
+    }
+}
+
+@keyframes bell-ring {
+    0% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+.bell-icon:hover {
+    font-size: 24px;
+    color: #333;
+    animation: bell-ring 1s infinite;
+    transform-origin: top center;
+}

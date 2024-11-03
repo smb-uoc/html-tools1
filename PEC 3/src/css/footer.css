@@ -1,0 +1,137 @@
+
+footer {
+    background-image: linear-gradient(to right, #d35e4e, #9a9a79, #526c93);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
+}
+
+footer a,
+footer li {
+    text-decoration: none;
+    border: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    padding: 0;
+}
+
+footer a:hover {
+    color: rgb(229, 225, 254);
+}
+
+.footer-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-left img {
+    max-width: 45%;
+    height: auto;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social img:hover {
+    fill: rgb(229, 225, 254);
+    opacity: 0.7;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.footer-links li:last-child {
+    padding-right: 0;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.multiple-links li::before {
+    content: "> ";
+    font-weight: normal;
+}
+
+.first-level > a {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 481px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 4rem;
+    }
+
+    .footer-social {
+        justify-content: flex-end;
+    }
+
+    .footer-links ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer-links li {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-weight: bold;
+    }
+
+    .footer-links li:first-child {
+        border-left: none;
+        border-right: none;
+    }
+
+    .footer-left {
+        justify-content: left;
+        align-items: flex-start;
+        flex: 0.5;
+    }
+
+    .multiple-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .multiple-links li {
+        font-weight: normal;
+    }
+
+    .multiple-links li::before {
+        content: "> ";
+        font-weight: normal;
+    }
+
+    .footer-left a {
+        display: flex;
+    }
+
+    .footer-left img {
+        max-width: 125px;
+        height: auto;
+    }
+}
